@@ -1,0 +1,71 @@
+/*--------------------------------------------------------------
+## Tabs
+--------------------------------------------------------------*/
+.xp-tabs .tabs-heading {
+  margin-bottom: 0;
+  overflow: hidden;
+}
+.xp-tabs .tab-link {
+  cursor: pointer;
+  font-family: "DM Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  min-width: 170px;
+  margin-right: 30px;
+  padding: 12px 0;
+  float: left;
+  text-align: center;
+  text-transform: uppercase;
+  color: #1a1b1e;
+  border-bottom: 3px solid #d7d7d7;
+  transition: all 0.3s linear;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  -ms-transition: all 0.3s linear;
+  -webkit-border-radius: 1.5px;
+  -moz-border-radius: 1.5px;
+  border-radius: 1.5px;
+}
+.xp-tabs .tab-link.current, .xp-tabs .tab-link:hover {
+  border-color: #C19977;
+}
+.xp-tabs .tab-link:last-child {
+  margin-right: 0;
+}
+.xp-tabs .tab-content {
+  display: none;
+  padding: 33px 0 0;
+}
+.xp-tabs .tab-content.current {
+  display: inherit;
+}
+.xp-tabs .tab-content ul, .xp-tabs .tab-content ol {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 17px;
+}
+.xp-tabs .tab-content ul li, .xp-tabs .tab-content ol li {
+  position: relative;
+  padding-left: 46px;
+  margin-bottom: 15px;
+}
+.xp-tabs .tab-content ul li:before, .xp-tabs .tab-content ol li:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  width: 30px;
+  height: 1px;
+  background: #555555;
+}
+.xp-tabs .tab-content ul li:last-child, .xp-tabs .tab-content ol li:last-child {
+  margin-bottom: 0;
+}
+.xp-tabs p:last-child,
+.xp-tabs ul:last-child {
+  margin-bottom: 0;
+}
